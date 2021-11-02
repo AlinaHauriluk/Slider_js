@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(228, 209, 209);
+    padding: 35px;
+}
+
+.wrapper {
+    background-color: rgba(27, 19, 19, 0.918);
+    border-radius: 10px;
+    height: 400px;
+    width: 705px;
+    margin: 50px auto;
+    padding: 30px 0;
+    position: relative;
+}
+
+.item {
+    height: 400px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.item .text {
+    width: 40%;
+    padding: 20px 15px 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.804);
+    color: rgb(241, 203, 146);
+}
+
+.item .one {
+    background-image: url('../images/food_1.jpg');
+    background-position: 0 55%;
+}
+
+.item .two {
+    background-image: url('../images/food_2.jpg');
+}
+
+.item .three {
+    background-image: url('../images/food_3.jpg');
+    background-position: 0 20%;
+}
+
+.item .four {
+    background-image: url('../images/food_4.jpg');
+}
+
+.item .five {
+    background-image: url('../images/food_5.jpg');
+}
+
+.right,
+.left {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(117, 114, 114, 0.445);
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 93%;
+}
+
+.arrow-right,
+.arrow-left {
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+}
+
+.arrow-right {
+    transform: rotate(45deg);
+    right: 20px;
+}
+
+.arrow-right::before,
+.arrow-left::after {
+    content: '';
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    width: 3px;
+    height: 20px;
+}
+
+.arrow-left {
+    transform: rotate(-45deg);
+    left: 20px;
+}
+
+.arrow-right::before {
+    transform: rotate(90deg); 
+    bottom: 9px;
+    right: 9px;
+}
+
+.arrow-left::after {
+    transform: rotate(90deg); 
+    top: -9px;
+    right: -10px;
+}

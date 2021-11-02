@@ -1,0 +1,12 @@
+.slider {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider .list {
+    display: flex;
+    transition: all 1s ease; 
+    list-style: none;
+}
+
+
